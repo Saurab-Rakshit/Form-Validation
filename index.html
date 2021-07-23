@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="contanier">
+      <h1 class="text-success text-center">Form Validation</h1>
+      <br />
+      <div class="col-lg-4 m-auto d-block">
+        <form action="#" onsubmit="return validation()" class="bg-color-orange">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="user"
+              class="form-control"
+              id="user"
+              autocomplete="off"
+            />
+            <span id="username" class="text-danger font-weight-bold"></span> 
+          </div>
+          <div class="form-group">
+            <label for="username">Email Id</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              autocomplete="off"
+            />
+            <span id="emailid" class="text-danger font-weight-bold"></span>            
+          </div>
+          <div class="form-group">
+            <label for="username">Mobile NO.</label>
+            <input
+              type="text"
+              name="mobno"
+              class="form-control"
+              id="mobno"
+              autocomplete="off"
+            />
+            <span id="mobileno" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="form-group">
+            <label for="username">Password</label>
+            <input
+              type="text"
+              name="password"
+              class="form-control"
+              id="pass"
+              autocomplete="off"
+            />
+            <span id="password" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="form-group">
+            <label for="username">Confirm Password</label>
+            <input
+              type="text"
+              name="cpassword"
+              class="form-control"
+              id="cpass"
+              autocomplete="off"
+            />
+            <span id="cpassword" class="text-danger font-weight-bold"></span>
+          </div>
+
+          <input type="submit" value="Submit" class="btn btn-primary" id="btn" />
+        </form>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+
+  </body>
+</html>
