@@ -20,6 +20,12 @@ function validation(){
     if (email === '') {
         document.getElementById('emailid').innerHTML  = '*Please fill email';
         return false;            
+    }else if(email.indexOf('@') <= 0){
+        document.getElementById('emailid').innerHTML = '@ invalid position';
+        return false;
+    }else if((email.charAt(email.length-4) != '.') && (email.charAt(email.length-3) != '.')){
+        document.getElementById('emailid').innerHTML = '*Check your "." position it must be before last 3 letters or 2 letters';
+        return false;
     }
     //* Mobile NO
     if (mobno === '') {
